@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Gill Sans', sans-serif;
+}
+
+.clearfix {
+  overflow: auto;
+  content:"";
+  clear:both;
+}
+
+#header {
+  height: 550px;
+  background: url('images/header-bg.jpg') bottom no-repeat;
+  background-size: 100%;
+}
+
+#logo {
+  width: 50px;
+  padding: 30px;
+}
+
+#navigation {
+  padding: 40px;
+  float: right;
+}
+
+#navigation li {
+  display: inline;
+  padding: 20px;
+}
+
+#navigation li a {
+  color: rgb(40,40,40);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#navigation li a:hover {
+  color: rgb(200,40,60);
+  border-bottom: 4px solid rgb(200,40,60);
+}
+
+#teaser {
+  margin-top: 20px;
+  font-size: 48px;
+  text-align: center;
+}
+
+#teaser span {
+  font-weight: 900;
+  color: rgb(200,40,60);
+}
+
+#content {
+  width: 55%;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+
+h2 {
+  color: rgb(200,40,60);
+  font-size: 32px;
+}
+
+p {
+  padding: 20px 0px;
+  line-height: 24px;
+}
+
+.imageBox {
+  display: inline-block;
+  margin-right: 30px;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  /*-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.6);
+  -moz-box-shadow: 0 0 10px 0 rgba(0,0,0,0.6);
+  box-shadow: 0  0 10px 0 rgba(0,0,0,0.6);*/
+}
+
+.imageBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.imageBox:hover img {
+  height: 50%;
+  -webkit-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	transition: all .4s ease;
+}
+
+.imageBox:hover .text {
+  height: 50%;
+  margin-top: 50%;
+  opacity: 1;
+  -webkit-transition: margin-top .4s ease;
+  -o-transition: margin-top .4s ease;
+  transition: margin-top .4s ease;
+}
+
+.imageBox .text {
+  background: rgb(40,40,50);
+  color: #ffffff;
+  opacity: 0;
+  margin-top: 100%;
+  position: absolute;
+  padding: 0 20px;
+}
+
+.imageBox .text a {
+  display: inline-block;
+  width: 100%;
+  border-bottom: 4px solid rgb(200,40,60);
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.imageBox .text a:hover {
+  color: rgb(160,160,160);
+}
+
+form {
+  max-width:600px;
+  margin:20px 0;
+  float: left;
+}
+
+.feedback-input {
+  border:2px solid rgb(200,40,60);
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+[type="submit"] {
+  width: 100%;
+  background: rgb(200,40,60);
+  border:0;
+  cursor:pointer;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 900;
+  padding: 10px 0;
+}
+
+[type="submit"]:hover {
+  background: rgb(180,30,50);
+}
+
+.right {
+  width: 400px;
+  float: right;
+}
+
+#footer {
+  background: rgb(40,40,50);
+  color: #ffffff;
+  margin-top: 40px;
+  padding: 15px;
+  text-align: center;
+}
